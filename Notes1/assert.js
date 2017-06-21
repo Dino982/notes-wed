@@ -1,6 +1,7 @@
 var assert = {
 
   isEq: function(firstAssertion, secondAssertion) {
+    console.log(`Testing '${firstAssertion}' against '${secondAssertion}'`);
     if (firstAssertion != secondAssertion){
       throw new Error("Expected " + firstAssertion + " to equal " + secondAssertion + ".");
     }
