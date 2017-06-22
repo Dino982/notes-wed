@@ -1,12 +1,13 @@
 (function(exports) {
 
-  function Notelistview() {
-  }
+  function Notelistview(notelist) {
+    this.notelist = notelist
+  };
 
 
-  Notelist.prototype.doHTML = function () {
+  Notelistview.prototype.doHTML = function () {
     var result;
-    this.array.forEach(function(note) {
+    this.notelist.array.forEach(function(note) {
       result = "<ul><li><div>" + note.text + "</div></li></ul>";
     })
     return result;
